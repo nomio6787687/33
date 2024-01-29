@@ -13,4 +13,7 @@ def showtime(request):
             return JsonResponse({"time":time})
         else:
             return JsonResponse({"message":"invalid action"})
+
+    return JsonResponse({"message":"invalid method"})
+
         
