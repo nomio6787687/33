@@ -11,5 +11,6 @@ def showtime(request):
         if action=="gettime":
             time= datetime.now()
             return JsonResponse({"time":time})
-
-
+        else:
+            return JsonResponse({"message":"invalid action"})
+        
